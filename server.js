@@ -37,10 +37,10 @@ http.createServer((req, res) => {
             res.writeHead(200, {'content-type': 'text/html'})
             res.end(data);
         });
-    }else if (url === '/styles.css') {
-        fs.readFile('./public/styles.css',(err,data) => {
+    }else if (url === '/style.css') {
+        fs.readFile('./public/style.css',(err,data) => {
             if(err){
-                res.writeHead(500, {'content-type': 'text/css'});
+                res.writeHead(500, {'content-type': 'text/html'});
                 res.end("<h1>500 Server Error</h1>");
                 return;
             }
