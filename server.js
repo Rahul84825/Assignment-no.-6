@@ -17,11 +17,11 @@ http
       body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f8faff;
-  color: #333;
+  background-color: rgb(244, 236, 236);
+  color: rgb(51, 51, 51);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .navbar {
@@ -35,63 +35,42 @@ http
 .navbar ul {
     list-style: none;
     margin: 0;
-    font-size: 1.3vw;
+    font-size: 1.3rem;
     padding: 0;
     display: flex;
 }
 
 .navbar ul li a {
     text-decoration: none;
-    color: #6d8595;
-    padding: 0 1.5vw;
+    color: rgb(93, 109, 131);
+    padding: 0 1.5rem;
 }
 
 .footer {
-    background-color: #f6f7f9;   
-    color: #374151;              
+    background-color: rgb(236, 235, 235);  
+    color: rgb(56, 55, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;              
     padding: 40px 20px;
 }
 
-.footer-bottom {
-    max-width: 1200px;
-    margin: 30px auto 0;
-    padding-top: 15px;
-    border-top: 1px solid #e6e9ee;
-
-    text-align: center;
-    font-size: 13px;
-    color: #6b7280;
-}
-
 .hero-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 8%;
-    background: #ffffff;
-}
-
-.left-div {
-    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 30px;
+    background: white;
 }
 
 .left-div h1 {
     font-size: 38px;
     margin-bottom: 20px;
-    color: #222;
+    color: rgb(48, 47, 47);
     line-height: 1.3;
 }
 
-.half_heading {
-    color: #2563eb;
-}
-
-.span {
-    color: #1e40af;
-}
-
 .left-div p {
-    color: #555;
+    color: rgb(85, 85, 85);
     font-size: 16px;
     margin-bottom: 25px;
     line-height: 1.6;
@@ -99,21 +78,11 @@ http
 
 .book-button {
     padding: 12px 20px;
-    background-color: #2563eb;
-    cursor: pointer;
-    color: #fff;
+    background-color: rgb(55, 81, 207);
+    color: white;
     border-radius: 4px;
     border: none;
     font-size: 15px;
-}
-
-.book-button:hover {
-    background-color: #1d4ed8;
-}
-
-.right-div {
-    width: 45%;
-    text-align: center;
 }
 
 .right-div img {
@@ -121,50 +90,6 @@ http
     max-width: 400px;
     border-radius: 8px;
 }
-
-.quality-section {
-    padding: 60px 8%;
-    background-color: #f5f7fa;
-}
-
-.quality-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.quality-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.quality-card {
-    width: 240px;
-    background: #ffffff;
-    padding: 25px 20px;
-    border-radius: 8px;
-    text-align: center;
-    border: 1px solid #e5e7eb;
-}
-
-.quality-icon {
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-
-.quality-card h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #222;
-}
-
-.quality-card p {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.5;
-}
-
     </style>
     <title>home page</title>
 </head>
@@ -190,37 +115,10 @@ http
       </h1>
       <p>From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup and
         rediscover the freshness of your clothes today!</p>
-      <button class="book-button" onclick="bookService()">Book a service today!</button>
+      <button class="book-button">Book a service today!</button>
     </div>
     <div class="right-div">
       <img src="resources/css/img/machine.jpeg" alt="Washing Machine Icon">
-    </div>
-  </section>
-
-    <section class="quality-section">
-    <div class="quality-inner">
-      <div class="quality-cards">
-        <div class="quality-card">
-          <div class="quality-icon">📋</div>
-          <h3>Premium Services</h3>
-          <p>We offer premium dry cleaning to swift wash and fold, with expert care and attention to detail.</p>
-        </div>
-        <div class="quality-card">
-          <div class="quality-icon">💬</div>
-          <h3>Quick Support</h3>
-          <p>24/7 customer support available to assist you with inquiries, feedback, or any laundry needs.</p>
-        </div>
-        <div class="quality-card">
-          <div class="quality-icon">🚚</div>
-          <h3>Timely Delivery</h3>
-          <p>Guaranteed on-time pickup and delivery of your clothes with professional handling throughout.</p>
-        </div>
-        <div class="quality-card">
-          <div class="quality-icon">💰</div>
-          <h3>Affordable Prices</h3>
-          <p>Competitive pricing without compromising on quality. We offer great value for premium services.</p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -243,11 +141,11 @@ http
     body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f8faff;
-  color: #333;
+  background-color: rgb(233, 233, 250);
+  color: rgb(51, 51, 51);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .navbar {
@@ -268,13 +166,13 @@ http
 
 .navbar ul li a {
     text-decoration: none;
-    color: #6d8595;
+    color: rgb(109, 133, 149);
     padding: 0 1.5vw;
 }
 
 .footer {
-    background-color: #f6f7f9;   
-    color: #374151;              
+    background-color: rgb(215, 215, 224);   
+    color: rgb(55, 65, 81);              
     padding: 40px 20px;
 }
 
@@ -282,17 +180,17 @@ http
     max-width: 1200px;
     margin: 30px auto 0;
     padding-top: 15px;
-    border-top: 1px solid #e6e9ee;
+    border-top: 1px solid rgb(194, 194, 206);
 
     text-align: center;
     font-size: 13px;
-    color: #6b7280;
+    color: rgb(107, 114, 128);
 }
 
 
 .about-section {
     padding: 50px 20px;
-    background: #f4f6f8;
+    background: rgb(229, 229, 241);
 }
 
 .about-inner {
@@ -302,23 +200,13 @@ http
 }
 
 .about-inner h1 {
-    font-size: 26px;
-    margin-bottom: 20px;
-    color: #222;
     text-align: center;
 }
 
 .about-inner p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 18px;
-    color: #444;
     text-align: center;
 }
 
-.about-inner strong {
-    color: #000;
-}
   </style>
 </head>
 
@@ -372,11 +260,11 @@ http
     body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f8faff;
-  color: #333;
+  background-color: rgb(248, 250, 255);
+  color: rgb(51, 51, 51);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display:grid;
+  grid-template-rows:auto 1fr auto;
 }
 
 .navbar {
@@ -397,13 +285,13 @@ http
 
 .navbar ul li a {
     text-decoration: none;
-    color: #6d8595;
+    color: rgb(109, 133, 149);
     padding: 0 1.5vw;
 }
 
 .footer {
-    background-color: #f6f7f9;   
-    color: #374151;              
+    background-color: rgb(246, 247, 249);   
+    color: rgb(55, 65, 81);              
     padding: 40px 20px;
 }
 
@@ -411,15 +299,15 @@ http
     max-width: 1200px;
     margin: 30px auto 0;
     padding-top: 15px;
-    border-top: 1px solid #e6e9ee;
+    border-top: 1px solid rgb(230, 233, 238);
 
     text-align: center;
     font-size: 13px;
-    color: #6b7280;
+    color: rgb(107, 114, 128);
 }
 
 .contact-section {
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     padding: 60px 20px;
 }
 
@@ -429,24 +317,17 @@ http
     text-align: center;
 }
 
-.contact-inner h1 {
-    font-size: 28px;
-    margin-bottom: 30px;
-    color: #0f172a;
-}
-
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-
 .contact-form input,
 .contact-form textarea {
     padding: 12px 14px;
     font-size: 14px;
-    border: 1px solid #d1d5db;
+    border: 1px solid rgb(209, 213, 219);
     border-radius: 6px;
     outline: none;
     width: 100%;
@@ -456,24 +337,17 @@ http
     padding: 12px 14px;
     font-size: 14px;
     font-weight: bold;
-    background-color: #2563eb;
-    color: #ffffff;
+    background-color: rgb(37, 99, 235);
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 6px;
-    cursor: pointer;
-    transition: 0.2s ease;
     width: 100%;
 }
-
-.contact-form button:hover {
-    background-color: #1d4ed8;
-}
-
 
 .contact-info {
     margin-top: 30px;
     font-size: 14px;
-    color: #6b7280;
+    color: rgb(107, 114, 128);
 }
 
 .contact-info p {
@@ -481,9 +355,6 @@ http
 }
   </style>
   <title>Contact Us - Expert Laundry Services</title>
-
-  <!-- SAME CSS -->
-  <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
